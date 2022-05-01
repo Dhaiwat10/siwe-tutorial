@@ -7,6 +7,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
   switch (method) {
     case 'GET':
       req.session.destroy();
+      req.session.siwe = undefined;
       res.send({ ok: true });
       break;
     default:
