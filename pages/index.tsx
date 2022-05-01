@@ -29,6 +29,11 @@ const Home: NextPage = () => {
     console.log({ account, activeChain });
   }, [account, activeChain]);
 
+  const signOut = async () => {
+    await fetch('/api/logout', { method: 'POST' });
+    setState({});
+  };
+
   const signIn = useCallback(async () => {
     try {
       const address = account?.address;
@@ -105,10 +110,7 @@ const Home: NextPage = () => {
             <div>Signed in as {state.address}</div>
             <button
               className='rounded bg-slate-200 p-2 w-fit mx-auto mt-2'
-              onClick={async () => {
-                await fetch('/api/logout');
-                setState({});
-              }}
+              onClick={signOut}
             >
               Sign Out
             </button>
