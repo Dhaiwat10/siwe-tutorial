@@ -25,16 +25,12 @@ const Home: NextPage = () => {
     loading?: boolean;
   }>({});
 
-  useEffect(() => {
-    console.log({ account, activeChain });
-  }, [account, activeChain]);
-
   const signOut = async () => {
     await fetch('/api/logout', { method: 'POST' });
     setState({});
   };
 
-  const signIn = useCallback(async () => {
+  const signIn = async () => {
     try {
       const address = account?.address;
       const chainId = activeChain?.id;
@@ -76,7 +72,7 @@ const Home: NextPage = () => {
     } catch (error: Error) {
       setState((x) => ({ ...x, error, loading: false }));
     }
-  }, [account, activeChain]);
+  };
 
   // Fetch user when:
   useEffect(() => {
