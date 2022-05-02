@@ -1,29 +1,15 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-web3-frontend`](https://github.com/dhaiwat10/create-web3-frontend).
+# Sign-in with Ethereum tutorial
 
-## Getting Started
+This tutorial is based off of the SIWE tutorial found in the `wagmi` docs: https://wagmi.sh/examples/sign-in-with-ethereum
+___
 
-First, run the development server:
+## Resources
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+![CleanShot 2022-05-02 at 07 13 40](https://user-images.githubusercontent.com/39617427/166174900-9a73b9aa-3c58-4c23-b889-af9a24073b41.png)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [SIWE overview](https://docs.login.xyz/general-information/siwe-overview)
+- [What is a nonce?](https://www.techtarget.com/searchsecurity/definition/nonce)
+- [Next.js API routes](https://nextjs.org/docs/api-routes/introduction)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
-
-## Learn More
-
-To learn more about wagmi, take a look at the following resources:
-
-- [wagmi Documentation](https://wagmi.sh)
-- [wagmi Repo](https://github.com/tmm/wagmi)
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the create-web3-frontend GitHub repository](https://github.com/dhaiwat10/create-web3-frontend) - your feedback and contributions are welcome!
+- [wagmi docs](https://wagmi.sh)
+- [create-web3-frontend](https://github.com/dhaiwat10/create-web3-frontend)
